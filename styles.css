@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #748DAE;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.navbar {
+    background-color: #afadd0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar ul li a:hover {
+    background-color: #C7D9DD;
+    border-radius: 5px;
+}
+
+
+.main-container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+article {
+    flex: 3;
+    background-color: #d7e6d5;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.article-header {
+    background-color: #edf5ec;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+main {
+    background-color: #edf5ec;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+aside {
+    flex: 1;
+    background-color: #C7D9DD;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 16px;
+  margin: 12px 0 20px;
+}
+
+.card {
+  background-color: #eceeee;
+  border: 1px solid #d0dfdd;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.card h3,
+.card h2 {
+  margin-bottom: 8px;
+  color: #233b59;           
+  font-size: 1.05rem;
+}
+
+.card p {
+  color: #1f2e24;
+  line-height: 1.65;
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: block;
+  object-fit: cover;
+}
+
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+
+@media (max-width: 992px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .cards { grid-template-columns: 1fr; }
+}
+
+
+section {
+    background-color: #C7D9DD;
+    padding: 15px;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+
+footer {
+    background-color: #afadd0;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
